@@ -1,17 +1,42 @@
-<!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
-</html>
+<div id="app">
+  <h1 class="text-center">Tabla de Usuarios</h1>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">RUN</th>
+        <th scope="col">Nacimiento</th>
+        <th scope="col">Edad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>{{usuario[0].nombre}}</td>
+        <td>{{usuario[0].apellido}}</td>
+        <td>{{usuario[0].run}}</td>
+        <td>{{usuario[0].nacimiento}}</td>
+        <td>{{usuario[0].edad}}</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>{{usuario[1].nombre}}</td>
+        <td>{{usuario[1].apellido}}</td>
+        <td>{{usuario[1].run}}</td>
+        <td>{{usuario[1].nacimiento}}</td>
+        <td>{{usuario[1].edad}}</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>{{usuario[2].nombre}}</td>
+        <td>{{usuario[2].apellido}}</td>
+        <td>{{usuario[2].run}}</td>
+        <td>{{usuario[2].nacimiento}}</td>
+        <td>{{usuario[2].edad}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

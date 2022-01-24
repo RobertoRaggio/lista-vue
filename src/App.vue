@@ -1,19 +1,37 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+new Vue({
+        el: "#app",
+        data: {
+          usuario: [
+            {
+              nombre: "Pau",
+              apellido: "Capell",
+              run: "18633955-4",
+              nacimiento: "02-12-88",
+              edad: 33
+            },
+            {
+              nombre: "Michael",
+              apellido: "Schumacher",
+              run: "9867451-0",
+              nacimiento: "03-01-1969",
+              edad: 53
+            },
+            {
+              nombre: "Magnus",
+              apellido: "Carlsen",
+              run: "19833821-9",
+              nacimiento: "08-09-1993",
+              edad: 28
+            }
+          ]
+        }
+      });
 </script>
 
 <style>
